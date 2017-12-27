@@ -9,9 +9,26 @@
     <meta name="author" content="Owen Dunnigan">
     <link rel="stylesheet" href="main.css" type="text/css" />
     <link rel="stylesheet" href="glitch.css" type="text/css" />
+    <link rel="stylesheet" href="blur.css" type="text/css" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
 
 <body>
+    <script type="text/javascript">$(window).scroll(function() {
+    // スクロールの位置取得 
+    // Get scroll position
+    var s = $(window).scrollTop(),
+    // スクロールの値と透明度
+    // scroll value and opacity
+    opacityVal = (s / 850.0);
+    // blurの画像の透明度を0%から100％
+    // opacity value 0% to 100%
+    $('.blurred-img').css('opacity', opacityVal);
+});</script>
+    <div id="blurred-image-container">
+    <div class="img-src" style="background-image:url('https://preview.c9users.io/o_dog5960/photo/Photos/dad.jpg')"></div>
+    <div class="img-src blurred-img" style="background-image:url('https://preview.c9users.io/o_dog5960/photo/Photos/dad.png')"></div>
+</div>
     <div class="header">
         <h1>Photography</h1>
         <h3>Taken by Owen Dunnigan</h3>
