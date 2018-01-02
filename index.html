@@ -14,17 +14,9 @@
 </head>
 
 <body>
-    <script type="text/javascript">$(window).scroll(function() {
-    // スクロールの位置取得 
-    // Get scroll position
-    var s = $(window).scrollTop(),
-    // スクロールの値と透明度
-    // scroll value and opacity
-    opacityVal = (s / 850.0);
-    // blurの画像の透明度を0%から100％
-    // opacity value 0% to 100%
-    $('.blurred-img').css('opacity', opacityVal);
-});</script>
+    <script type="text/javascript">
+   $(window).scroll(function(){var o=$(window).scrollTop()/850;$(".blurred-img").css("opacity",o)});
+</script>
     <div id="blurred-image-container">
     <div class="img-src" style="background-image:url('https://preview.c9users.io/o_dog5960/photo/Photos/dad.jpg')"></div>
     <div class="img-src blurred-img" style="background-image:url('https://preview.c9users.io/o_dog5960/photo/Photos/dad.png')"></div>
@@ -32,5 +24,31 @@
     <div class="header">
         <h1>Photography</h1>
         <h3>Taken by Owen Dunnigan</h3>
+    </div>
+    <div class="row">
+        <div class="column">
+            <img src="/Photos/anna.jpg"></img>
+            <img src="/Photos/bridge.jpg"></img>
+            <img src="/Photos/dock.jpg"></img>
+            <img src="/Photos/lamp.jpg"></img>
+        </div>
+        <div class="column">
+            <img src="/Photos/eric_2.jpg"></img>
+            <img src="/Photos/eric.jpg"></img>
+            <img src="/Photos/eric_emo.jpg"></img>
+            <img src="/Photos/lily.jpg"></img>
+        </div>
+        <div class="column">
+            <img src="/Photos/ericcc.jpg"></img>
+            <img src="/Photos/flowers.jpg"></img>
+            <img src="/Photos/grace.jpg"></img>
+            <img src="/Photos/pano.jpg"></img>
+        </div>
+        <div class="column">
+            <img src="griff.jpg"></img>
+            <img src="griffin.jpg"></img>
+            <img src="kirby.jpg"></img>
+            <img src="/Photos/steel_wool.jpg"></img>
+        </div>
     </div>
 </body>
